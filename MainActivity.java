@@ -59,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnLayoutChan
     private void preinitX5WebCore() {
         if (!QbSdk.isTbsCoreInited()) {
             QbSdk.preInit(getApplicationContext(), null);// 设置X5初始化完成的回调接口
+
+            Toast.makeText(this,"修改了代码",Toast.LENGTH_LONG).show();
         }
     }
 
